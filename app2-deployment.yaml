@@ -20,6 +20,9 @@ spec:
           imagePullPolicy: IfNotPresent
           command: ['sh', '-c', 'echo Running ; sleep 3600']
           resources:
-            limits:
-              memory: "256Mi"
-              cpu: "250m"
+            limits:   
+              memory: "50Mi"
+              cpu: "50m"
+            requests:
+              memory: "50Mi"
+              cpu: "50m"
